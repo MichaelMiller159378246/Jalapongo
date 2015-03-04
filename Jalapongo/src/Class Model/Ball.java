@@ -1,7 +1,6 @@
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 
-// This is a test Michael Miller
 
 /**
  * @author Mike
