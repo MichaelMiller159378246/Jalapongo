@@ -6,7 +6,7 @@
  * @created 02-Mar-2015 3:19:46 PM
  */
 public class Power-Ups {
-
+//comment by jon
 	private Circle appearance;
 	private int power;
 	private Rectangle powerUp;
