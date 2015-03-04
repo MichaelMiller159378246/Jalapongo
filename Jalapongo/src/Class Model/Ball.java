@@ -54,7 +54,7 @@ public class Ball {
 	}
 
 	public setPaddleLastHit(){
-
+///// B++++++++++++++++++
 	}
 
 	public int setXLoc(int xLoc){
