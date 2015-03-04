@@ -29,7 +29,7 @@ public class Ball {
 	}
 
 	public Paddle getPaddleLastHit(){
-		return null;
+		return this.paddleLastHit;
 	}
 
 	public Paddle getXLoc(){
@@ -53,8 +53,8 @@ public class Ball {
 		yLoc += ySpeed;
 	}
 
-	public setPaddleLastHit(){
-///// B++++++++++++++++++
+	public void setPaddleLastHit(Paddle paddleLastHit){
+		this.paddleLastHit = paddleLastHit;
 	}
 
 	public int setXLoc(int xLoc){
