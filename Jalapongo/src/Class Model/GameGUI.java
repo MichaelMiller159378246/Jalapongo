@@ -1,3 +1,4 @@
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
@@ -51,35 +52,25 @@ public class GameGUI {
 	public void finalize() throws Throwable {
 
 	}
-	/**
-	 * 
-	 * @param Scene
-	 */
-	public changeScene(Scene){
+	
+	public void changeScene(Scene scene){
+	}
+
+	
+	public void launchServer(int port){
 
 	}
 
-	/**
-	 * 
-	 * @param port
-	 */
-	public launchServer(int port){
+	public void main(){
 
 	}
 
-	public main(){
+	public void run(){
 
 	}
 
-	public run(){
-
-	}
-
-	/**
-	 * 
-	 * @param port
-	 */
-	public server(int port){
+	//Move to Host?
+	public void server(int port){
 
 	}
 }//end Game GUI
