@@ -7,7 +7,6 @@
  */
 public class Ball {
 //Jon commented on ball 
-	//just for dalton
 	private Rectangle ball;
 	private Circle GUIBall;
 	private Paddle paddleLastHit;
