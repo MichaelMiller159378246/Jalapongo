@@ -38,15 +38,15 @@ public class Ball {
 	}
 
 	public int getXSpeed(){
-		return 0;
+		return xSpeed;
 	}
 
 	public int getYLoc(){
-		return 0;
+		return yLoc;
 	}
 
 	public int getYSpeed(){
-		return 0;
+		return ySpeed;
 	}
 
 	public void moveBall(){
@@ -58,19 +58,19 @@ public class Ball {
 
 	}
 
-	public int setXLoc(){
-		return 0;
+	public int setXLoc(int xLoc){
+		this.xLoc = xLoc;
 	}
 
-	public int setXSpeed(){
-		return 0;
+	public int setXSpeed(int xSpeed){
+		this.xSpeed = xSpeed;
 	}
 
-	public int setYLoc(){
-		return 0;
+	public int setYLoc(int yLoc){
+		this.yLoc = yLoc;
 	}
 
-	public int setYSpeed(){
-		return 0;
+	public int setYSpeed(int ySpeed){
+		this.ySpeed = ySpeed;
 	}
 }//end Ball
