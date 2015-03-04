@@ -1,3 +1,6 @@
+import javafx.scene.shape.Circle;
+import javafx.scene.shape.Rectangle;
+
 
 /**
  * @author Mike
@@ -56,19 +59,19 @@ public class Ball {
 		this.paddleLastHit = paddleLastHit;
 	}
 
-	public int setXLoc(int xLoc){
+	public void setXLoc(int xLoc){
 		this.xLoc = xLoc;
 	}
 
-	public int setXSpeed(int xSpeed){
+	public void setXSpeed(int xSpeed){
 		this.xSpeed = xSpeed;
 	}
 
-	public int setYLoc(int yLoc){
+	public void setYLoc(int yLoc){
 		this.yLoc = yLoc;
 	}
 
-	public int setYSpeed(int ySpeed){
+	public void setYSpeed(int ySpeed){
 		this.ySpeed = ySpeed;
 	}
 }//end Ball
