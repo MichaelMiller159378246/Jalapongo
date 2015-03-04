@@ -1,4 +1,3 @@
-//Test comment
 /**
  * @author Mike
  * @version 1.0
@@ -21,7 +20,7 @@ public class Player extends Paddle Game GUI {
 
 	}
 
-	public setLacation(){
+	public setLocation(){
 
 	}
 }//end Player
