@@ -49,8 +49,9 @@ public class Ball {
 		return 0;
 	}
 
-	public int moveBall(){
-		return 0;
+	public void moveBall(){
+		xLoc += xSpeed;
+		yLoc += ySpeed;
 	}
 
 	public setPaddleLastHit(){
