@@ -44,7 +44,7 @@ public class GameGUI {
 	public Ball m_Ball;
 	public Paddle m_Paddle;
 
-	public GameGUI(){
+	public GameGUI() {
 
 	}
 
