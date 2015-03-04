@@ -1,4 +1,3 @@
-//new
 
 /**
  * @author Mike
