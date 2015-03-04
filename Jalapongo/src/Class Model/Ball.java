@@ -6,7 +6,8 @@
  * @created 02-Mar-2015 3:19:43 PM
  */
 public class Ball {
-//Jon commented
+//Jon commented on ball 
+	//just for dalton
 	private Rectangle ball;
 	private Circle GUIBall;
 	private Paddle paddleLastHit;
