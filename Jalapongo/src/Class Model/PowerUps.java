@@ -21,39 +21,39 @@ public class PowerUps {
 	public void finalize() throws Throwable {
 
 	}
-	public flip(){
+	public void flip(){
 
 	}
 
-	public healthAdd(){
+	public void healthAdd(){
 
 	}
 
-	public healthSub(){
+	public void healthSub(){
 
 	}
 
-	public largePaddle(){
+	public void largePaddle(){
 
 	}
 
-	public shield(){
+	public void shield(){
 
 	}
 
-	public smallPaddle(){
+	public void smallPaddle(){
 
 	}
 
-	public speedAdd(){
+	public void speedAdd(){
 
 	}
 
-	public speedSub(){
+	public void speedSub(){
 
 	}
 
-	public stall(){
+	public void stall(){
 
 	}
 }//end Power-Ups
