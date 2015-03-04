@@ -32,8 +32,8 @@ public class Ball {
 		return this.paddleLastHit;
 	}
 
-	public Paddle getXLoc(){
-		return null;
+	public int getXLoc(){
+		return xLoc;
 	}
 
 	public int getXSpeed(){
