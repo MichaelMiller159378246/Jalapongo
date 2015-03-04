@@ -7,8 +7,8 @@
  */
 public class Paddle {
 
-	private rectangle GUIPaddle;
-	private line Paddle;
+	private Rectangle GUIPaddle;
+	private Line Paddle;
 	private int PaddleLocX;
 	private int PaddleLocY;
 

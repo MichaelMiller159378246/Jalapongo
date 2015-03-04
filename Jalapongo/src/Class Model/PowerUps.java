@@ -5,7 +5,7 @@
  * @version 1.0
  * @created 02-Mar-2015 3:19:46 PM
  */
-public class Power-Ups {
+public class PowerUps {
 //comment by jon
 	private Circle appearance;
 	private int power;
@@ -14,7 +14,7 @@ public class Power-Ups {
 	private int xLoc;
 	private int yLoc;
 
-	public Power-Ups(){
+	public PowerUps(){
 
 	}
 
