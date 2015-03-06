@@ -1,3 +1,5 @@
+package jalapongo;
+
 
 
 /**
@@ -5,16 +7,16 @@
  * @version 1.0
  * @created 02-Mar-2015 3:19:45 PM
  */
-public class Jalapongo App {
+public class JalapongoApp {
 
-	public Jalapongo App(){
+	public JalapongoApp(){
 
 	}
 
 	public void finalize() throws Throwable {
 
 	}
-	public main(){
+	public static void main(String[] args){
 
 	}
 }//end Jalapongo App

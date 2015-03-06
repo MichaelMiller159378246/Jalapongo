@@ -1,9 +1,11 @@
+package jalapongo;
+
 /**
  * @author Mike
  * @version 1.0
  * @created 02-Mar-2015 3:19:45 PM
  */
-public class Player extends Paddle Game GUI {
+public class Player /* extends Paddle Game GUI */ {
 
 	private int health;
 	private String name;
@@ -16,11 +18,11 @@ public class Player extends Paddle Game GUI {
 	public void finalize() throws Throwable {
 		super.finalize();
 	}
-	public getLocation(){
+	public void getLocation(){
 
 	}
 
-	public setLocation(){
+	public void setLocation(){
 
 	}
 }//end Player

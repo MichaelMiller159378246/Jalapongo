@@ -1,3 +1,5 @@
+package jalapongo;
+
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 
