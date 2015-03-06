@@ -1,5 +1,3 @@
-package jalapongo;
-
 import javafx.scene.shape.*;
 
 /**
@@ -8,54 +6,57 @@ import javafx.scene.shape.*;
  * @created 02-Mar-2015 3:19:46 PM
  */
 public class PowerUps {
-//comment by jon
+	
 	private Circle appearance;
 	private int power;
 	private Rectangle powerUp;
 	private int type;
-	private int xLoc;
-	private int yLoc;
 
 	public PowerUps(){
+		powerUp = new Rectangle();
+			powerUp.setX((int)Math.random()*600 + 50); //Upper Left Corner
+			powerUp.setY((int)Math.random()*600 + 50); //Upper Left Corner
+			powerUp.setWidth(20);
+			powerUp.setHeight(20);
+	}
+
+	public void flipX(){ //flip player controls
+		
+	}
+	
+	public void multiBall(){ //Add 3 - 8 balls
+		int numBall = (int)(Math.random()*8 + 3);
+		int[] balls;
+		for(i = 0; i <= numball; i++){
+			Ball balls[i] = new Ball();
+		}
+	}
+
+	public void addLives(){ //add 1 life to player
 
 	}
 
-	public void finalize() throws Throwable {
-
-	}
-	public void flip(){
+	public void shield(){ // protect against one goal
 
 	}
 
-	public void healthAdd(){
+	public void largePaddle(){ //increase paddle length
 
 	}
 
-	public void healthSub(){
+	public void smallPaddle(){ //decrease paddle length
 
 	}
 
-	public void largePaddle(){
+	public void speedAdd(){ //set ball speed higher
 
 	}
 
-	public void shield(){
+	public void speedSub(){ //set ball speed lower
 
 	}
 
-	public void smallPaddle(){
-
-	}
-
-	public void speedAdd(){
-
-	}
-
-	public void speedSub(){
-
-	}
-
-	public void stall(){
-
+	public void stall(){ //set paddle speed = 0
+		
 	}
 }//end Power-Ups
