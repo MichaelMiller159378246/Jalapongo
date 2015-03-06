@@ -1,8 +1,6 @@
-package jalapongo;
-
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
-//This comment was added on Github
+
 
 /**
  * @author Mike
@@ -14,22 +12,26 @@ public class Ball {
 	private Rectangle ball;
 	private Circle GUIBall;
 	private Paddle paddleLastHit;
-	private int xLoc;
 	private int xSpeed;
-	private int yLoc;
 	private int ySpeed;
+	private int size;
 
 	public Ball(){
-
+		ball = new Rectangle();
+			ball.setX(setStartLoc());//Upper Left Corner
+			ball.setY(setStartLoc());//Upper Left Corner
+			ball.setWidth(size);
+			ball.setHeight(size);
+		xSpeed = setStartSpeed();
+		ySpeed = setStartSpeed();
 	}
 
-	/**
-	 * 
-	 * @exception Throwable
-	 */
-	public void finalize()
-	  throws Throwable{
-
+	public int setStartLoc(){
+		return (int)Math.ceil(Math.random()*300 + 200);
+	}
+	
+	public int setStartSpeed(){
+		return (int)Math.ceil(Math.random()*10 + 5);
 	}
 
 	public Paddle getPaddleLastHit(){
@@ -37,7 +39,7 @@ public class Ball {
 	}
 
 	public int getXLoc(){
-		return xLoc;
+		return (int)ball.getX();
 	}
 
 	public int getXSpeed(){
@@ -45,16 +47,16 @@ public class Ball {
 	}
 
 	public int getYLoc(){
-		return yLoc;
+		return (int)ball.getY();
 	}
 
 	public int getYSpeed(){
 		return ySpeed;
 	}
 
-	public void moveBall(){
-		xLoc += xSpeed;
-		yLoc += ySpeed;
+	public void moveBall(){//This needs Work
+		ball.setX(ball.getX() + xSpeed);
+		ball.setY(ball.getY() + ySpeed);
 	}
 
 	public void setPaddleLastHit(Paddle paddleLastHit){
@@ -62,7 +64,7 @@ public class Ball {
 	}
 
 	public void setXLoc(int xLoc){
-		this.xLoc = xLoc;
+		ball.setX(xLoc);
 	}
 
 	public void setXSpeed(int xSpeed){
@@ -70,10 +72,17 @@ public class Ball {
 	}
 
 	public void setYLoc(int yLoc){
-		this.yLoc = yLoc;
+		ball.setY(yLoc);
 	}
 
 	public void setYSpeed(int ySpeed){
 		this.ySpeed = ySpeed;
 	}
+	
+	public void setWidthAndHeight(int size){
+		ball.setWidth(size);
+		ball.setHeight(size);
+		this.size = size;
+	}
+	
 }//end Ball
