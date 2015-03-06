@@ -37,11 +37,12 @@ public class Paddle {
 		return 0;
 	}
 
-	public setXstart(){
+	public int setXstart(){
+		
 
 	}
 
-	public setYstart(){
+	public int setYstart(){
 
 	}
 }//end Paddle
