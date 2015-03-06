@@ -1,5 +1,3 @@
-package jalapongo;
-
 import javafx.scene.shape.*;
 
 /**
@@ -14,6 +12,7 @@ public class Paddle {
 	private int PaddleLocX;
 	private int PaddleLocY;
 	private int pos;
+	private int speed;
 
 	public Paddle(int pos){
 		if(pos == 1){
@@ -63,13 +62,14 @@ public class Paddle {
 		}
 	}
 
+	public void paddleMove(){
+		if(pos == 1 || pos == 3){
+			Paddle.setEndX(Paddle.getEndX() + speed);
+			Paddle.setStartX(Paddle.getStartX() + speed);
+		}
+		else{
+			Paddle.setEndY(Paddle.getEndY() + speed);
+			Paddle.setStartY(Paddle.getStartY() + speed);
+		}
+	}
 }//end Paddle
-/** For Ball Class
-public int setXstart(){
-	return (int)Math.ceil(Math.random()*300+200);
-}
-
-public int setYstart(){
-	return (int)Math.ceil(Math.random()*300+200);
-}
-*/
