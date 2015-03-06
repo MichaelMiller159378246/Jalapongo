@@ -1,5 +1,5 @@
-package jalapongo;
-
+package src.jalapongo;
+//Changed the package
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
