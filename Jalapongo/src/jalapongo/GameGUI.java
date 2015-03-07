@@ -226,7 +226,52 @@ ObservableList livesoptions = FXCollections.observableArrayList("5", "10", "25",
 		Scene sceneGOS = new Scene(bpGOS, 700,700);
 		
 //*******************************************************************************		
-		
+		//Join Screen GUI
+		//create GUI objects
+				BorderPane bpJS = new BorderPane();
+				VBox vbJS = new VBox();
+				HBox hbNameJS = new HBox();
+				HBox hbPortJS = new HBox();
+				HBox hbIP = new HBox();
+			
+			// Make text	
+				Text nameTextJS = new Text("Name: ");
+				Text portTextJS = new Text("Port #:");
+				Text ipText = new Text("IP address:");
+				
+				TextField nameTFJS = new TextField("Joey");
+				TextField portTFJS= new TextField(" ");
+				TextField ipTF = new TextField("");
+				
+			// Make Buttons	
+				Button backJS = new Button("Back");
+				Button randomJS = new Button ("Randomize");
+				Button joinGameJS = new Button("Join Game");
+					joinGameJS.setFont(new Font(24));
+					joinGameJS.setMaxWidth(300);
+				
+				hbNameJS.getChildren().addAll(nameTextJS, nameTFJS);
+				hbNameJS.setAlignment(Pos.CENTER);
+				hbNameJS.setSpacing(75);
+				
+				hbPortJS.getChildren().addAll(portTextJS, portTFJS, randomJS);
+				hbPortJS.setAlignment(Pos.CENTER);
+				hbPortJS.setSpacing(10);
+				
+				hbIP.getChildren().addAll(ipText,ipTF);
+				hbIP.setAlignment(Pos.CENTER);
+				hbIP.setSpacing(75);
+				
+				vbJS.getChildren().addAll(hbNameJS, hbPortJS,hbIP,joinGameJS);
+				vbJS.setAlignment(Pos.CENTER);
+				vbJS.setSpacing(50);
+				
+				bpJS.setCenter(vbJS);
+				bpJS.setBottom(backJS);
+			
+			
+				Scene sceneJS = new Scene(bpJS, 700,700);
+//*******************************************************************************			
 		
 		
 		quitBSM.setOnMouseClicked(e -> System.exit(0));
@@ -237,6 +282,7 @@ ObservableList livesoptions = FXCollections.observableArrayList("5", "10", "25",
 		
 		hostBCS.setOnMouseClicked(e -> primaryStage.setScene(sceneHOS));
 		backBCS.setOnMouseClicked(e -> primaryStage.setScene(startMScene));
+		playBCS.setOnMouseClicked(e -> primaryStage.setScene(sceneJS));
 		
 		optionsHO.setOnMouseClicked(e -> primaryStage.setScene(sceneGOS));
 		backHO.setOnMouseClicked(e -> primaryStage.setScene(choiceScene));
